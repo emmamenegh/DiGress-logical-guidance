@@ -1,0 +1,5 @@
+use_guidance: True # no effect in the code, just a flag (control guidance using lambda_guidance)
+model_path: null
+
+lambda_guidance: 100.0
+n_experiments: 100

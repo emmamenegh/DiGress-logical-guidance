@@ -1,0 +1,16 @@
+# @package _global_
+general:
+    name : 'classifier'
+    gpus : 4
+    wandb: 'online'
+    remove_h: null
+    guidance_target: 'HBA'       # null is the default when not using guidance. Otherwise, use either 'logP', 'molW', 'HBD' or 'HBA'
+train:
+    n_epochs: 200
+    batch_size: 128
+    save_model: True
+    progress_bar: True
+model:
+    n_layers: 2
+    lambda_train: [2, 0] # not used
+    extra_features: null

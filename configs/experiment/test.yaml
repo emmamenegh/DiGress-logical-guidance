@@ -1,0 +1,32 @@
+# @package _global_
+general:
+    name : 'test'
+    gpus : 1
+    wandb: 'disabled'
+    sample_every_val: 1
+    samples_to_generate: 64  
+    samples_to_save: 0
+    chains_to_save: 0
+
+    final_model_samples_to_generate: 6500
+    final_model_samples_to_save: 6500
+    final_model_chains_to_save: 100
+
+    test_only: '/storage/emmenegh/DiGress-Guidance/checkpoints/guacamol.ckpt' # '/scratch/nas/4/meneghin/DiGress-Guidance/checkpoints/guacamol.ckpt' 'checkpoints/guacamol.ckpt'
+    check_val_every_n_epochs: 1
+
+    guidance_target: null      # null is the default when not using guidance. Otherwise, use either 'logP', 'molW', 'logPAndMolW' or 'all'
+    satisfaction_rule: null    # null is the default when not using guidance. Otherwise, use either 'single', 'composite' or 'LRo5'
+
+train:
+    ema_decay : 0
+    batch_size: 32
+    save_model: False
+    n_epochs : 1
+
+# model:
+#     n_layers: 2
+#     extra_features: null
+
+dataset:
+    name: 'guacamol'

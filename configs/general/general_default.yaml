@@ -1,0 +1,26 @@
+# General settings
+name: 'graph-tf-model'      # Warning: 'debug' and 'test' are reserved name that have a special behavior
+
+wandb: 'online'             # online | offline | disabled
+gpus: 1
+
+guidance_target: null      # null is the default when not using guidance. Otherwise, use either 'logP', 'molW', 'logPAndMolW' or 'all'
+satisfaction_rule: null    # null is the default when not using guidance. Otherwise, use either 'single', 'composite' or 'LRo5'
+
+resume: null               # If resume, path to ckpt file from outputs directory in main directory (for resuming training of the diffusion model)
+test_only: null            # Use absolute path
+
+check_val_every_n_epochs: 5
+sample_every_val: 4
+val_check_interval: null
+samples_to_generate: 64       # We advise to set it to 2 x batch_size maximum               (not used for classifier training)
+samples_to_save: 20                                                                       # (not used for classifier training)
+chains_to_save: 1                                                                         # (not used for classifier training)
+log_every_steps: 50
+number_chain_steps: 50        # Number of frames in each gif                                (not used for classifier training)
+
+final_model_samples_to_generate: 10000                                                    # (not used for classifier training)
+final_model_samples_to_save: 30                                                           # (not used for classifier training)
+final_model_chains_to_save: 20                                                            # (not used for classifier training)
+
+evaluate_all_checkpoints: False

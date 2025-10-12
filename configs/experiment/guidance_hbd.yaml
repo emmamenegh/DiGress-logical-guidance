@@ -1,0 +1,28 @@
+# @package _global_
+general:
+    name : 'guidance_hbd'
+    gpus : 1
+    wandb: 'disabled'
+    # sample_every_val: 4
+    # samples_to_generate: 10
+    samples_to_save: 1
+    chains_to_save: 1
+    final_model_samples_to_save: 6500
+    # final_model_chains_to_save: 20
+    number_chain_steps: 50       # Number of frames in each gif
+    # THIS SHOULD BE THE SAME AS THE CLASSIFICATION MODEL THAT IS LOADED
+    guidance_target: 'HBD'       # null is the default when not using guidance. Otherwise, use either 'logP', 'molW', 'HBD', 'HBA', or 'all'
+    satisfaction_rule: 'single'   # null is the default when not using guidance. Otherwise, use either 'single', 'composite' or 'LRo5'
+    test_only: '/storage/emmenegh/DiGress-Guidance/checkpoints/guacamol.ckpt'
+    trained_classifier_dir: '/storage/emmenegh/DiGress-Guidance/saved-classifiers'
+train:
+    batch_size: 32               # Needs to be 1 for testing (not any more)
+    save_model: False
+# model:
+#     n_layers: 5
+#     extra_features: null
+guidance:
+    lambda_guidance: 47.82
+    # n_experiments: 1          # Change to 100
+dataset:
+    remove_h: null
