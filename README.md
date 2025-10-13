@@ -7,12 +7,14 @@ This project is adapted from [DiGress](https://github.com/cvignac/DiGress), deve
 Extensions and modifications © 2025 **Emma Meneghini**.  
 
 ## Code Structure
-- `./src/` - Adapted code from DiGress, with extensive modifications and corrections.  
-  The `datasets`, `guidance`, and `models` subfolders were significantly updated, and several issues in the original implementation were corrected.
+The repository combines adapted components from DiGress with original contributions developed for this thesis:
+- `./src/` – Adapted code from DiGress, with corrections and substantial extensions.  
+  The `datasets`, `guidance`, and `models` subfolders were expanded with new functionality, 
+  and several issues from the original implementation were addressed.
 
-- `./configs/` – Configurations for running the experiments, with major changes in the `experiment/` subfolder.  
+- `./configs/` – Configurations for running the experiments, with significant additions in the `experiment/` subfolder.
 
-- `./evaluation_scripts/` – Entirely new code for extracting useful statistics from the generated molecule sets.  
+- `./evaluation_scripts/` – Entirely new code for extracting detailed statistics from the generated molecule sets.  
 
 ## Usage
 To compile and run the programs, please follow the setup and execution instructions provided in the [original DiGress repository](https://github.com/cvignac/DiGress).  
