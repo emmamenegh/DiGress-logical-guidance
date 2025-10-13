@@ -7,7 +7,7 @@ This project is adapted from [DiGress](https://github.com/cvignac/DiGress), deve
 Extensions and modifications © 2025 **Emma Meneghini**.  
 
 ## Code Structure
-The repository combines adapted components from DiGress with original contributions developed for this thesis:
+The repository combines adapted components from the DiGress `guidance` branch with original contributions developed for this thesis:
 - `./src/` – Adapted code from DiGress, with corrections and substantial extensions.  
   The `datasets`, `guidance`, and `models` subfolders were expanded with new functionality, and several issues from the original implementation were addressed.
 
