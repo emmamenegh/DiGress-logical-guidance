@@ -1,6 +1,6 @@
 # Guiding Diffusion with Logical Constraints: Molecular Graph Generation under Lipinski's Rules
 
-This repository contains the code for running the experiments of the thesis **"Guiding Diffusion with Logical Constraints: Molecular Graph Generation under Lipinski's Rules"**, developed at **Universitat Politècnica de Catalunya (UPC), Facultat d’Informàtica de Barcelona (FIB)**, jointly with the **University of Padua, Department of Mathematics**, as part of the *Master’s in Data Science Double Degree Programme*.  
+This repository contains the code for running the experiments of the thesis **"Guiding Diffusion with Logical Constraints: Molecular Graph Generation under Lipinski's Rules"**, developed at **Universitat Politècnica de Catalunya (UPC), Facultat d’Informàtica de Barcelona (FIB)**, jointly with the **University of Padua, Department of Mathematics**, as part of the *Master’s in Data Science Double Degree Programme*. The thesis can be freely accessed at [Thesis and Dissertation Padua Archive](https://thesis.unipd.it/handle/20.500.12608/96649). 
 
 ## Repository Origin
 This project is adapted from [DiGress](https://github.com/cvignac/DiGress), developed by **Clement Vignac, Igor Krawczuk, and Antoine Siraudin**, and distributed under the MIT License.  
